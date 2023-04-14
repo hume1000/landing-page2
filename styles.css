@@ -3,6 +3,8 @@ body {
     margin: 0;
 }
 
+/*---Hero and header---*/
+
 header, .hero, footer {
     background-color: #1f2937;
 }
@@ -30,7 +32,7 @@ a {
 
 .hero-description, a, footer {
     font-size: 18px;
-    color: #e5e7eb;
+    color: #c1c4ca;
 }
 
 .hero-title {
@@ -40,23 +42,24 @@ a {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 32px;
+    padding: 32px 250px;
 }
 
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 32px;
+    padding: 100px 250px 150px 250px
+    ;
     gap: 32px;
 }
 
 .placeholder {
-    height: 200px;
-    width: 400px;
-    color: #fcfcfc;
+    height: 230px;
+    width: 500px;
+    color: #eeeef0;
     background-color: #6d747d;
     display: flex;
     align-items: center;
@@ -67,8 +70,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 10px;
     width: 500px;
+}
+
+.hero-description {
+    padding-right: 16px;
 }
 
 button {
@@ -77,5 +84,81 @@ button {
     color: #f9faf8;
     font-size: 16px;
     font-weight: bold;
-    padding: 7px 24px;
+    padding: 9px 32px;
 }
+
+.button1 {
+    border-style: none;
+}
+
+/*---Info---*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    margin-bottom: 64px;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.img {
+    height: 170px;
+    width: 170px;
+    border: 5px solid #3882f6;
+    border-radius: 15px;
+}
+
+.txt {
+    width: 170px;
+    text-align: center;
+    color: #5b6471;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*---Quotes---*/
+
+.quotes {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 125px 310px;
+}
+
+.quote {
+    font-size: 36px;
+    color: #232d3b;
+}
+
+.signature {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    padding-right: 50px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+/*Call to action*/
+
